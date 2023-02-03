@@ -1,4 +1,4 @@
-const db = require('./db/db_init.sql')
+const db = require('./db/dbconnection.js')
 const express = require('express')
 const prompts = require('./lib/prompts')
 const PORT = process.env.PORT || 3001;
