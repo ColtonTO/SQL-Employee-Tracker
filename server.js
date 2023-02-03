@@ -1,6 +1,6 @@
 const db = require('./db/dbconnection.js')
 const express = require('express')
-const prompts = require('./lib/prompts')
+const init = require('./lib/prompts')
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -9,4 +9,13 @@ app.use(express.json());
 
 app.use((req,res) => {
     res.status(404).end();
+})
+
+db.connect(err => {
+    if (err) throw err;
+    console.log('Database connected')
+    app.listen(PORT, () => {
+        console.log(`App listening at http://localhost:${PORT} 🚀`);
+        init();
+    })
 })
