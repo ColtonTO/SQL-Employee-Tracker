@@ -25,4 +25,5 @@ VALUES
 ("Toby", "Turner", 5),
 ("Jennifer", "Watkins", 6),
 ("John", "Doe", 7),
-("Quentin", "Tarantino", 8);
+("Quentin", "Tarantino", 5),
+("Jonathan", "Doesworth", 4);
