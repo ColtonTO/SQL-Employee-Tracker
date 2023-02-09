@@ -30,6 +30,7 @@ An SQL-based application that uses content management systems (CMS) to allow non
 
 ## Installation 
 Fork repo and source the sql files using mysql. Then type 'node server.js'.
+Type 'npm i' into command line in the main file directory. 
 
 ## Test Instructions
 N/A
