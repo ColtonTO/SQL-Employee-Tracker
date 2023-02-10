@@ -1,3 +1,4 @@
+// Required modules 
 const db = require('./db/dbconnection.js')
 const express = require('express')
 const init = require('./lib/prompts')
@@ -10,7 +11,7 @@ app.use(express.json());
 app.use((req,res) => {
     res.status(404).end();
 })
-
+// Main function to connect to the DB
 db.connect(err => {
     if (err) throw err;
     console.log('Database connected')
